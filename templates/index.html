@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+{% block content %}
+
+<head>
+</head>
+
+<body align="center">
+    <b>
+        {{ name }}
+    </b> <br>
+    {% if name == "Bobir" %}
+    <h2>
+        Tanishganimdan xursandman, {{ name }}
+        {% else %}
+        Salom. Ismingiz nima?
+    </h2>
+    {% endif %}
+    <h3>
+        {% for x in [5, 6, 7] %}
+        {{ x }}
+        {% endfor %}
+    </h3>
+</body>
+{% endblock %}
+
+</html>
